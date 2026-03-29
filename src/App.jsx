@@ -54,7 +54,7 @@ export default function App() {
       <div style={styles.content}>
         {/* Top wordmark */}
         <header style={styles.header}>
-          <span style={styles.wordmark}>HIJINX</span>
+          <span style={styles.wordmark}>hijinx</span>
         </header>
 
         {/* Center block */}
@@ -148,12 +148,11 @@ const styles = {
     textAlign: 'center',
   },
   wordmark: {
-    fontFamily: "'Space Mono', monospace",
-    fontWeight: 700,
+    fontFamily: "'Inter', sans-serif",
+    fontWeight: 500,
     fontSize: '0.75rem',
     letterSpacing: '0.45em',
     color: '#ffffff',
-    textTransform: 'uppercase',
   },
   main: {
     flex: 1,
@@ -174,13 +173,12 @@ const styles = {
     marginBottom: '2.5rem',
   },
   email: {
-    fontFamily: "'Space Mono', monospace",
-    fontWeight: 700,
+    fontFamily: "'Inter', sans-serif",
+    fontWeight: 400,
     fontSize: '0.72rem',
-    letterSpacing: '0.3em',
+    letterSpacing: '0.12em',
     color: '#EDE8FB',
     textDecoration: 'none',
-    textTransform: 'lowercase',
     opacity: 0.9,
     marginBottom: '2.5rem',
   },
