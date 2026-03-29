@@ -8,8 +8,17 @@ function pickRandom(arr) {
 
 export default function App() {
   const videoSrc = useRef(pickRandom(VIDEOS))
+  const videoRef = useRef(null)
   const [status, setStatus] = useState('idle') // idle | submitting | success | error
   const [email, setEmail] = useState('')
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+    video.play().catch(() => {
+      // autoplay blocked — fallback background colour shows through
+    })
+  }, [])
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -37,6 +46,7 @@ export default function App() {
     <div style={styles.root}>
       {/* Video background */}
       <video
+        ref={videoRef}
         key={videoSrc.current}
         autoPlay
         muted
@@ -115,8 +125,8 @@ export default function App() {
 const styles = {
   root: {
     position: 'relative',
-    width: '100vw',
-    height: '100vh',
+    width: '100%',
+    height: '100%',
     overflow: 'hidden',
     background: '#1C1446',
   },
