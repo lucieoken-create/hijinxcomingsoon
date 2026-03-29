@@ -161,7 +161,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     gap: '0',
-    paddingBottom: '2rem',
+    transform: 'translateY(-8vh)',
   },
   headline: {
     fontFamily: "'Space Mono', monospace",
