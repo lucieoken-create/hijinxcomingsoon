@@ -124,22 +124,25 @@ export default function App() {
 
 const styles = {
   root: {
-    position: 'relative',
-    width: '100%',
-    height: '100%',
+    position: 'fixed',
+    inset: 0,
     overflow: 'hidden',
     background: '#1C1446',
   },
   video: {
-    position: 'absolute',
-    inset: 0,
-    width: '100%',
-    height: '100%',
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    minWidth: '100%',
+    minHeight: '100%',
+    width: 'auto',
+    height: 'auto',
+    transform: 'translate(-50%, -50%)',
     objectFit: 'cover',
     zIndex: 0,
   },
   overlay: {
-    position: 'absolute',
+    position: 'fixed',
     inset: 0,
     background: 'rgba(28, 20, 70, 0.18)',
     zIndex: 1,
