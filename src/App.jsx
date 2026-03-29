@@ -98,7 +98,7 @@ export default function App() {
                   disabled={status === 'submitting'}
                   style={styles.button}
                 >
-                  {status === 'submitting' ? 'sending…' : 'notify me'}
+                  {status === 'submitting' ? 'sending…' : 'stay in touch'}
                 </button>
               </form>
             )}
@@ -161,7 +161,6 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     gap: '0',
-    transform: 'translateY(-8vh)',
   },
   headline: {
     fontFamily: "'Space Mono', monospace",
@@ -171,6 +170,7 @@ const styles = {
     color: '#ffffff',
     textAlign: 'center',
     marginBottom: '2.5rem',
+    transform: 'translateY(-6vh)',
   },
   email: {
     fontFamily: "'Inter', sans-serif",
