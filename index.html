@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <!-- Netlify form detection (hidden) -->
+    <form name="waitlist" netlify netlify-honeypot="bot-field" hidden>
+      <input type="email" name="email" />
+      <input type="text" name="bot-field" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
