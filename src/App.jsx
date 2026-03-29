@@ -125,8 +125,8 @@ export default function App() {
 const styles = {
   root: {
     position: 'relative',
-    width: '100vw',
-    height: '100svh',
+    width: '100%',
+    height: '100%',
     overflow: 'hidden',
     background: '#1C1446',
   },
