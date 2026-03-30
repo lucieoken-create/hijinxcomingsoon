@@ -163,7 +163,7 @@ const styles = {
   wordmark: {
     fontFamily: "'Inter', sans-serif",
     fontWeight: 500,
-    fontSize: '0.75rem',
+    fontSize: '0.95rem',
     letterSpacing: '0.45em',
     color: '#ffffff',
   },
@@ -188,7 +188,7 @@ const styles = {
   email: {
     fontFamily: "'Inter', sans-serif",
     fontWeight: 400,
-    fontSize: '0.72rem',
+    fontSize: '0.9rem',
     letterSpacing: '0.12em',
     color: '#EDE8FB',
     textDecoration: 'none',
